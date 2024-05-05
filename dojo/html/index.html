@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dojo Weather</title>
+  <link rel="stylesheet" href="html/style.css">
+  <script src="html/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+  <h1>Dojo Weather</h1>
+  <ul>
+      <li><a href="#" onclick="select(this)">Burbank</a></li>
+      <li><a href="#" onclick="select(this)">Chicago</a></li>
+      <li><a href="#" onclick="select(this)">Dallas</a></li>
+  </ul>
+</nav>
+</header>
+<main>
+<div class="san-jose">
+  <h2>San Jose</h2>
+  <form>
+      <label for="type">Show temperature in:</label>
+      <select id="type" onchange="select_type()">
+          <option value="celsius" selected>Celsius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+      </select>
+  </form>
+</div>
+<div class="week-container">
+  
+  <div class="week">
+     
+      <div class="day">
+          <h3>Today</h3>
+          <img class="weather-icon" src="assets/some_rain.png" alt="Some rain">
+          <p>some rain</p>
+          <div class="temperature">
+              <span class="max temp1">24°</span>
+              <span class="min temp2">18°</span>
+          </div>
+      </div>
+
+
+
+      <div class="day">
+          <h3>Tomorrow</h3>
+          <img class="weather-icon" src="assets\some_sun.png" alt="Some sun">
+          <p>some sun</p>
+          <div class="temperature">
+              <span class="max temp3">24°</span>
+              <span class="min temp4">18°</span>
+          </div>
+      </div>
+
+
+
+
+      <div class="day">
+          <h3>Friday</h3>
+          <img class="weather-icon" src="assets/some_clouds.png" alt="Some clouds">
+          <p>some clouds</p>
+          <div class="temperature">
+              <span class="max temp5">24°</span>
+              <span class="min temp6">18°</span>
+          </div>
+      </div>
+
+
+
+      <div class="day">
+          <h3>Saturday</h3>
+          <img class="weather-icon" src="assets/some_sun.png" alt="Some Sun">
+          <p>some rain</p>
+          <div class="temperature">
+              <span class="max temp7">24°</span>
+              <span class="min temp8">18°</span>
+          </div>
+      </div>
+
+
+
+  </div>    <!--end of week div-->
+</div>
+</main>
+<footer>
+<div id="cookie-message" class="cookie">
+  <img src="assets/cookie.png" alt="cookie">
+  <div class="cookie-text">
+      <h4>Stop! Cookie time</h4>
+      <p>We use cookies (sadly not the edible ones) to personalize <br>
+      content and ads, to provide social media features and to <br>
+      analyse our traffic. <a href="#">Read more</a>
+      </p>
+  </div>
+  <button class="btnAccept" onclick="acceptCookies()">I Accept</button>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+
+.main{
+    
+  width: 1100px;
+   padding: 0px 20px;      /* top.and.bottom.0.right.and.left.20 */
+  margin: 0px auto;
+ 
+}
+
+.box{
+   
+  border: 2px solid black;
+  padding: 20px;
+  margin-bottom: 200px;
+  text-align: center;
+  width: 300px;
+  height: 250px;
+ justify-content: center;
+  
+
+}
+
+.box h1,
+.box p,
+.box button {
+  display: inline-block; 
+  /* vertical-align: middle;  */
+  margin-right: 10px; 
+  
+}
